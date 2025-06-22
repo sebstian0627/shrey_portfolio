@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Shreyansh Choudhary</span></h1>
+                <p class="hero-subtitle">Quantitative Researcher & Developer</p>
+                <p class="hero-description">I build high-performance systems and solve complex problems with a background in Mathematics and Computing from IIT Delhi.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Quantitative Researcher with a strong foundation in Mathematics and Computing, holding both an M.Tech and B.Tech from IIT Delhi. My experience ranges from designing arbitrage-finding R scripts at Mathisys Advisors to developing innovative solutions in image processing and natural language processing. I am passionate about leveraging my skills in C++, Python, and various ML frameworks to tackle challenging technical problems.</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-car-burst"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pothole Detection using Supervised NMF</h3>
+                        <p>A joint framework for NMF and classifiers to localize semantic image regions, achieving 0.80 mAP with real-time performance.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Crawler-Based Open Domain QA System</h3>
+                        <p>Built a task-based chatbot using Big Bird for question answering, with text summarization leveraging clustering and MSMARCO scores.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Content-Aware Image Retargeting</h3>
+                        <p>Carved seams using min-cut with forward energy and extended the algorithm to videos by minimizing energy in a 3D cube.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>High Resolution from Low Resolution Image</h3>
+                        <p>Implemented Glasner's super-resolution algorithm and used ElasticSearch to achieve a 6x speedup over KNN.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Adversarial Attacks on Video Summarization</h3>
+                        <p>Introduced imperceptible perturbations to video frames, degrading SIFT-based summarizer accuracy from 80% to 64%.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cry Detection for Wrist Wearables</h3>
+                        <p>Created an augmented audio dataset and built a Bi-LSTM detector on MFCC features, which was praised by BPR&D.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/sebstian0627" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content-centered">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:choudharyshreyansh27@gmail.com">choudharyshreyansh27@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919460990627">(+91)-9460990627</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/sebstian0627" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/choudharyshreyansh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Shreyansh Choudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
