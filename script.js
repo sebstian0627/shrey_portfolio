@@ -4,11 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const navbar = document.querySelector(".navbar");
     const sections = document.querySelectorAll("section");
-    const activityCards = document.querySelectorAll(".activity-card");
+    const soundHoverElements = document.querySelectorAll(".activity-card, .project-card, .skill-tag");
 
-    // Create a single audio object for the hover sound
-    const hoverSound = new Audio('https://cdn.pixabay.com/download/audio/2021/08/04/audio_c6629b3572.mp3');
-    hoverSound.volume = 0.3; // Set a lower volume to be less intrusive
+    const hoverSound = new Audio('623990__eqylizer__button-hover-click.mp3');
+    hoverSound.volume = 0.3;
     let audioUnlocked = false;
 
     function unlockAudio() {
@@ -67,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Sound effect for extracurriculars hover
-    activityCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
+    // Sound effect for hover
+    soundHoverElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
             if (audioUnlocked) {
                 hoverSound.currentTime = 0;
                 hoverSound.play().catch(error => console.log("Audio play failed."));
