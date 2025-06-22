@@ -341,9 +341,94 @@ section {
     text-decoration: underline;
 }
 
+/* Extracurriculars Section */
+#extracurriculars {
+    background-color: var(--background-color);
+}
+
+.extracurriculars-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 400px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.activity-description h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.activity-description p {
+    color: var(--text-muted-color);
+}
+
+/* Hobbies Section */
+#hobbies {
+    background-color: var(--surface-color);
+}
+
+.hobbies-content {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hobby-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.hobby-item:hover i {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transform: scale(1.1);
+}
+
 /* Contact Section */
 #contact {
-    background-color: var(--surface-color);
+    background-color: var(--background-color);
 }
 
 .contact-content {
